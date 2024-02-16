@@ -13,8 +13,23 @@ class Block {
 }
 
 // draw all my blocks
-const blocks = [new Block(10, 270)];
-
+const blocks = [
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+  new Block(10, 270),
+];
 // draw my block
 function addBlocks() {
   for (let i = 0; i < blocks.length; i++) {
