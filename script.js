@@ -42,3 +42,7 @@ function addBlocks() {
 }
 
 addBlocks();
+
+//add user
+const user = document.createElement("div");
+user.classList.add("user");
