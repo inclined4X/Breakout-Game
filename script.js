@@ -60,6 +60,12 @@ user.classList.add("user");
 drawUser();
 grid.appendChild(user);
 
+// draw the ball
+function drawBall() {
+  ball.style.left = BallCurrentPosition[0] + "px";
+  ball.style.bottom = BallCurrentPosition[1] + "px";
+}
+
 //draw the user
 function drawUser() {
   user.style.left = currentPosition[0] + "px";
@@ -88,6 +94,5 @@ document.addEventListener("keydown", moveUser);
 // add ball
 const ball = document.createElement("div");
 ball.classList.add("ball");
-ball.style.left = BallCurrentPosition[0] + "px";
-ball.style.bottom = BallCurrentPosition[1] + "px";
+drawBall();
 grid.appendChild(ball);
