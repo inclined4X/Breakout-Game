@@ -9,6 +9,10 @@ const boardWidth = 560;
 const userStart = [230, 10];
 let currentPosition = userStart;
 
+// position for the ball
+const ballStart = [230, 40];
+let BallCurrentPosition = ballStart;
+
 //create block
 class Block {
   constructor(xAxis, yAxis) {
