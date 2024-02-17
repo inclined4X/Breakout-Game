@@ -10,7 +10,7 @@ const userStart = [230, 10];
 let currentPosition = userStart;
 
 // position for the ball
-const ballStart = [230, 40];
+const ballStart = [270, 40];
 let BallCurrentPosition = ballStart;
 
 //create block
