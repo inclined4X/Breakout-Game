@@ -103,4 +103,6 @@ function moveBall() {
   BallCurrentPosition[0] += 2;
   // y axis
   BallCurrentPosition[1] += 2;
+  // draw ball
+  drawBall();
 }
