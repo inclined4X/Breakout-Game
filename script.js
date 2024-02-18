@@ -8,6 +8,13 @@ const boardWidth = 560;
 //timerid
 let timerId;
 
+//ball diameter
+let ballDiameter = 20;
+
+// x and y directions of the ball
+let xDirection = 2;
+let yDirection = 2;
+
 //position for the user
 const userStart = [230, 10];
 let currentPosition = userStart;
@@ -103,9 +110,9 @@ grid.appendChild(ball);
 // move ball
 function moveBall() {
   // x axis
-  BallCurrentPosition[0] += 2;
+  BallCurrentPosition[0] += xDirection;
   // y axis
-  BallCurrentPosition[1] += 2;
+  BallCurrentPosition[1] += yDirection;
   // draw ball
   drawBall();
 }
@@ -115,4 +122,9 @@ timerId = setInterval(moveBall, 30);
 // check for collisions
 function checkForCollisions() {
   //check for wall collisions
+  if (BallCurrentPosition[0] >= boardWidth - ballDiameter) {
+    changeDirection();
+  }
 }
+
+function changeDirection() {}
