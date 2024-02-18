@@ -115,6 +115,7 @@ function moveBall() {
   BallCurrentPosition[1] += yDirection;
   // draw ball
   drawBall();
+  checkForCollisions();
 }
 
 timerId = setInterval(moveBall, 30);
@@ -131,5 +132,7 @@ function changeDirection() {
   if (xDirection == 2 && yDirection == 2) {
     yDirection = -2;
     return;
+    // }
+    // if()
   }
 }
