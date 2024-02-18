@@ -5,6 +5,9 @@ const blockHeight = 20;
 //for the arrow right
 const boardWidth = 560;
 
+//timerid
+let timerId;
+
 //position for the user
 const userStart = [230, 10];
 let currentPosition = userStart;
@@ -107,4 +110,9 @@ function moveBall() {
   drawBall();
 }
 
-setInterval(moveBall, 30);
+timerId = setInterval(moveBall, 30);
+
+// check for collisions
+function checkForCollisions() {
+  //check for wall collisions
+}
