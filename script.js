@@ -106,3 +106,5 @@ function moveBall() {
   // draw ball
   drawBall();
 }
+
+setInterval(moveBall, 30);
