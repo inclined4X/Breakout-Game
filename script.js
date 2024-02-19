@@ -136,8 +136,20 @@ function checkForCollisions() {
 
 function changeDirection() {
   if (xDirection == 2 && yDirection == 2) {
+    yDirection = -2;
+    return;
+  }
+  //if we hit that wall we want to change the direction
+  if (xDirection == 2 && yDirection == -2) {
     xDirection = -2;
     return;
   }
-  // if()
+  if (xDirection === -2 && yDirection === 2) {
+    yDirection = 2;
+    return;
+  }
+  if (xDirection === -2 && yDirection === 2) {
+    xDirection = 2;
+    return;
+  }
 }
