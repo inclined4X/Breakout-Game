@@ -128,9 +128,15 @@ function checkForCollisions() {
   //check for wall collisions
   if (
     BallCurrentPosition[0] >= boardWidth - ballDiameter ||
-    BallCurrentPosition[1] >= boardHeight - ballDiameter
+    BallCurrentPosition[1] >= boardHeight - ballDiameter ||
+    BallCurrentPosition[0] <= 0
   ) {
     changeDirection();
+  }
+
+  // check for game over
+  if ((BallCurrentPosition[1] = 0)) {
+    clearInterval(timerId);
   }
 }
 
