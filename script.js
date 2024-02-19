@@ -11,6 +11,9 @@ let timerId;
 //ball diameter
 let ballDiameter = 20;
 
+//boardHeight
+const boardHeight = 300;
+
 // x and y directions of the ball
 let xDirection = 2;
 let yDirection = 2;
